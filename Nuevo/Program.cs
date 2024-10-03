@@ -10,7 +10,15 @@ namespace Nuevo
     {
         static void Main(string[] args)
         {
-            //Agrego un comentario
+            AvisosTrafico av1 = new AvisosTrafico();
+
+            av1.mostrarAviso();
+
+            AvisosTrafico av2 = new AvisosTrafico("Jefatura Madrid", "Sanción de velocidad: 200$", "02-05-16");
+
+            Console.WriteLine(av2.getFecha());
+
+            av2.mostrarAviso();
         }
     }
 }
