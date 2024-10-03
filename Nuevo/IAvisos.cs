@@ -6,11 +6,13 @@ using System.Threading.Tasks;
 
 namespace Nuevo
 {
-    internal class Program
+    internal interface IAvisos
     {
-        static void Main(string[] args)
-        {
 
-        }
+        void mostrarAviso();
+
+        string getFecha();
+
+
     }
 }
